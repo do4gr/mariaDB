@@ -1,4 +1,4 @@
-FROM mariadb:latest
+FROM mariadb:10.5
 
 # Copy custom scripts into the container
 COPY ./init_db.sql /docker-entrypoint-initdb.d/
